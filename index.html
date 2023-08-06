@@ -38,11 +38,11 @@
 <body class="bg-[#100c08] font-poppins text-[#fffdfd]" x-data>
     <!--Head section-->
     <header x-data="{isOpen: false}" class="fixed">
-        <div class="container flex justify-between m-auto snap-start">
+        <div class="container flex justify-right m-auto snap-start">
             <div class="px-4 font-semibold ">
                 HOTHEAD01TH
             </div>
-            <div class="fixed flex self-center justify-end w-full p-2 text-3xl duration-500 sm:hidden"
+            <div class="relative right self-center justify-end w-full p-2 text-3xl duration-500 sm:hidden"
                 @click="isOpen = !isOpen">
                 <i class="flex justify-end uim uim-bars"></i>
             </div>
@@ -75,21 +75,7 @@
         <div class="snap-start lg:flex">
             <div class="container flex justify-center p-10 py-8 m-auto space-x-5">
 
-                <div class="flex flex-col mt-20 space-y-2 text-2xl duration-1000 opacity-0 lg:text-3xl lg:p-10 lg:mt-20"
-                    x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
-                    <ul>
-                        <li class="hover:text-[#0072b1]"><a
-                                href="https://guthib.com"><i
-                                    class="uim uim-linkedin-alt"></i></a></li>
-                        <li class="hover:text-[#ffffff]"><a href="https://github.com/HOTHEAD01TH"><i
-                                    class="uim uim-github-alt"></i></a></li>
-                        <li class="hover:text-[#833AB4]"><a href="https://www.instagram.com/zaidu_01th"><i
-                                    class="uim uim-instagram-alt"></i></a></li>
-                        <li class="hover:text-[#FF0000]"><a
-                                href="https://www.youtube.com/@HOTHEADO1TH"><i
-                                    class="uim uim-youtube"></i></a></li>
-                    </ul>
-                </div>
+               
                 <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900ff] heart m-auto md:ml-96"
                 >
                     <img src="img/hothead.jpg" alt="" class="justify-center m-auto">
@@ -101,8 +87,8 @@
                 x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
                 <div class="self-center mx-2.5 lg:">
                     <div class="">
-                        Hi, I am HOT HEAD </br>
-                        I am a Front-End Developer
+                        Yo, it's me – HOT HEAD! </br>
+                         A Front-End Developer from kashmir.
                     </div>
                     <div class="flex justify-between gap-20 pt-10 md:gap-0 lg:text-sm lg:mt-20">
                             <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
@@ -157,7 +143,9 @@
                 <h1 class="mx-5">Projects:</h1>
                 <h2 class="mx-5"> 1) Music player</h2>
                 <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
-                   
+                    <a href="https://-------/">
+                        <img src="img/musicplayer2.png" alt="" class="rounded-3xl md:hidden lg:hidden">
+                    </a>
                    
                     <a href="https://------/">
                         <img src="img/musicplayer.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
@@ -166,23 +154,29 @@
                 </div>
                 2) Wheather webApp
                 <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
-                    
+                    <a href="https://--------/">
+                        <img src="img/webapp2.png" alt="" class="rounded-3xl md:hidden lg:hidden">
+                    </a>
                     <a href="https://-----/">
                         <img src="img/webapp.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
                     </a>
                 </div>
-                3) js image slider
+                3) Js image slider
                 <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
-                   
+                    <a href="https://------/">
+                        <img src="img/carsouul.png" alt="" class="rounded-3xl md:hidden lg:hidden">
+                    </a>
                    
                     <a href="https://-------/">
                         <img src="img/CARSOUL.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
                     </a>
                     
                 </div>
-                4) tribute page
+                4) Tribute page
                 <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
-                   
+                    <a href="https://-------/">
+                        <img src="img/tribute2.png" alt="" class="rounded-3xl md:hidden lg:hidden">
+                    </a>
                    
                     <a href="https://-------/">
                         <img src="img/tribute.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
@@ -389,8 +383,16 @@
                     <p>hothead01th@gmail.com</p>
                 </div>
             </div>
-            <h2 class="txt">Connect with us</h2>
-           
+            <h2 class="txt">Connect with me</h2>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/hothead01th"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/zaidu_01th"><ion-icon name="logo-discord"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/zaidu_01th"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/zaidu_01th"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.github.com/hothead01th"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/zaidu_01th"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            </ul>
+            
         </div>
 
         <div class="contactForm">
