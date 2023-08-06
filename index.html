@@ -1,0 +1,438 @@
+<!-- Author : HOT HEAD -->
+<!-- Copyright (c) HOTHEAD01TH. All rights reserved.-->
+<!--Description: lets collaborate and build something extraordinary!.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7900ff"/>
+    <meta name="description" content="My Personal Portfolio">
+    <meta name="p:domain_verify" content="9bc0b0ad7e17d41662d137e0f813a797"/>
+    
+    <!--Meta Tags End-->
+
+    <!--Script-->
+    <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!--Script end-->
+
+    <!--Links-->
+    <link rel="shortcut icon" href="img/hothead0px.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400&family=Hind+Siliguri&family=Poppins:wght@200;400;600;700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.min.css" />
+    <!--Links End-->
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-[#100c08] font-poppins text-[#fffdfd]" x-data>
+    <!--Head section-->
+    <header x-data="{isOpen: false}" class="fixed">
+        <div class="container flex justify-between m-auto snap-start">
+            <div class="px-4 font-semibold ">
+                HOTHEAD01TH
+            </div>
+            <div class="fixed flex self-center justify-end w-full p-2 text-3xl duration-500 sm:hidden"
+                @click="isOpen = !isOpen">
+                <i class="flex justify-end uim uim-bars"></i>
+            </div>
+        </div>
+
+        <div class="fixed flex w-full mt-5 transition duration-700 ease-in-out sm:block lg:block">
+            <ul class="absolute flex flex-col items-end justify-end w-full p-2 space-x-5 space-y-5 " x-show="isOpen"
+                x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90"
+                @click.away="isOpen=false">
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700 "><a href="#"
+                        class="cursor-pointer animate-bounce">Home</a></li>
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#about"
+                        class="cursor-pointer">About</a></li>
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#work" class="cursor-pointer">My
+                        Work</a></li>
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#skills"
+                        class="cursor-pointer">Skills</a></li>
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#hire" class="cursor-pointer">Hire
+                        Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--End of head-->
+
+    <!--Hero Section-->
+    </div>
+    <div class="snap-y snap-mandatory">
+        <div class="snap-start lg:flex">
+            <div class="container flex justify-center p-10 py-8 m-auto space-x-5">
+
+                <div class="flex flex-col mt-20 space-y-2 text-2xl duration-1000 opacity-0 lg:text-3xl lg:p-10 lg:mt-20"
+                    x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
+                    <ul>
+                        <li class="hover:text-[#0072b1]"><a
+                                href="https://guthib.com"><i
+                                    class="uim uim-linkedin-alt"></i></a></li>
+                        <li class="hover:text-[#ffffff]"><a href="https://github.com/HOTHEAD01TH"><i
+                                    class="uim uim-github-alt"></i></a></li>
+                        <li class="hover:text-[#833AB4]"><a href="https://www.instagram.com/zaidu_01th"><i
+                                    class="uim uim-instagram-alt"></i></a></li>
+                        <li class="hover:text-[#FF0000]"><a
+                                href="https://www.youtube.com/@HOTHEADO1TH"><i
+                                    class="uim uim-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900ff] heart m-auto md:ml-96"
+                >
+                    <img src="img/hothead.jpg" alt="" class="justify-center m-auto">
+                </div>
+
+            </div>
+
+            <div class="container flex justify-center m-auto space-x-5 text-center opacity-0 opesity lg:text-4xl lg:p-10 lg:m-10"
+                x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
+                <div class="self-center mx-2.5 lg:">
+                    <div class="">
+                        Hi, I am HOT HEAD </br>
+                        I am a Front-End Developer
+                    </div>
+                    <div class="flex justify-between gap-20 pt-10 md:gap-0 lg:text-sm lg:mt-20">
+                            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+                                <a href="#hire">Hire Me</a>
+                            </button>
+                        
+                            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+                                <a href="WHY DO YOU NEED MY RESUME YOU STALKER JUST SEND MESSAGE AND ASK">Resume</a>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of hero Section-->
+
+
+        <!--About Section-->
+        <div class="flex justify-center pt-10 font-semibold opacity-0" id="about"
+            x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
+            <div>ABOUT ME </div>
+        </div>
+        <div class="opacity-0 snap-start md:flex lg:flex"
+            x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
+          
+
+            <div>
+                <div class="p-5 text-xl text-center lg:mt-40"><p>Greetings, brave souls of the digital realm! I am HOT HEAD, a passionate programmer from kashmir.<br>With a palette of HTML, CSS, and JavaScript, I sculpt user interfaces that marry elegance with functionality. My journey began with curiosity, evolved with practice, and continues with every project I embrace.</p>
+
+               <br> <p>    Beyond the code, I'm a perpetual learner, always exploring new design trends and coding techniques. When I'm not immersed in pixels, you'll find me sipping coffee, sketching interface ideas, or tackling coding challenges.
+                    
+                    Let's transform your digital dreams into reality, one pixel at a time.</p><br><p> Have a project idea that's so strange it might just work? Well, I'm here to be your partner in code.<br></p>
+
+                   
+                </div>
+
+                <div class="flex justify-around py-3 text-2xl font-bold text-center md:mt-20 lg:mt-20">
+                    <h1>01+<p class="flex-wrap text-xs font-thin">Years<br> Experence</p>
+                    </h1>
+                    <h1>10+ <p class="text-xs font-thin">Completed<br>Projects</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!--End Of About Section-->
+
+        <!--Work Section-->
+        <div class="flex justify-center pt-10 font-semibold" id="work">
+            <div>My Work</div>
+        </div>
+        <div class="snap-start">
+            <div class="p-5 space-y-5">
+                <h1 class="mx-5">Projects:</h1>
+                <h2 class="mx-5"> 1) Music player</h2>
+                <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
+                   
+                   
+                    <a href="https://------/">
+                        <img src="img/musicplayer.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
+                    </a>
+                    
+                </div>
+                2) Wheather webApp
+                <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
+                    
+                    <a href="https://-----/">
+                        <img src="img/webapp.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
+                    </a>
+                </div>
+                3) js image slider
+                <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
+                   
+                   
+                    <a href="https://-------/">
+                        <img src="img/CARSOUL.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
+                    </a>
+                    
+                </div>
+                4) tribute page
+                <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start md:w-[50%]">
+                   
+                   
+                    <a href="https://-------/">
+                        <img src="img/tribute.png" alt="" class="hidden rounded-3xl h-96 md:block lg:block">
+                    </a>
+                    
+                </div>
+               
+        <!-- End of Work Section-->
+
+        <!--Skill And Education Section -->
+        <div class="snap-start">
+            <div class="flex justify-center p-5 pt-10 font-semibold" id="skills">
+                <div>Skills || Qualifications </div>
+            </div>
+
+
+        </div>
+        <div class="flex justify-between font-semibold">
+            <div class="flex justify-center p-2 m-auto space-y-5 ">
+                <div class="hidden md:block lg:block">
+                    Skills
+                </div>
+                <div class="flex justify-center text-center md:hidden lg:hidden">
+                    Skills
+                </div>
+            </div>
+
+            <div class="flex justify-start p-2 m-auto space-y-5 ">
+                <div class="hidden md:block lg:block">
+                    Qualifications
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:flex lg:space-x-10 lg:p-10 md:flex md:space-x-10 md:p-10 ">
+            <div class="w-full space-y-2">
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        HTML/CSS
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 90%"> 90%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        BOOTSTRAP CSS
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 60%"> 60%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        JAVASCRIPT
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 30%"> 30%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        C
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 50%"> 50%</div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        PYTHON
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 35%"> 35%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        LINUX
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 70%"> 70%</div>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-start p-2 m-auto ">
+                    <div>
+                        GIT AND GITHUB
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 80%"> 80%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        WORDPRESS
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 50%"> 50%</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-start p-2 m-auto space-y-5 ">
+                    <div>
+                        CONFIDENTIAL SUPER SKILL
+                    </div>
+                </div>
+
+                <div class="flex justify-center p-2 m-auto ">
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style="width: 90%"> 90%</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="p-5">
+                <div class="flex justify-center p-2 m-auto space-y-5 font-semibold text-center md:hidden lg:hidden">
+                    <div class="">
+                        Qualifications
+                    </div>
+                </div>
+                <div class="flex justify-center m-auto lg:block lg:text-3xl">
+                    <div>
+                       -> COMPLETED ONE YEAR DIPLOMA IN COMUTER <BR>
+                       -> CURRENTLY PURSUING BCA AT CASET COLLEGE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Skill And Education Section -->
+
+    <!--Contact Section-->
+    <div class="flex justify-center pt-10 m-5 font-semibold" id="hire">
+        <div>Contact Me </div>
+    </div>
+
+<!-- footer section  -->
+<section class="contact">
+    <div class="content">
+        
+    </div>
+    <div class="container">
+        <div class="contactInfo"> 
+            <div class="box">
+                <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>Jammu & Kashmir <br> india </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+91 0000000000</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>hothead01th@gmail.com</p>
+                </div>
+            </div>
+            <h2 class="txt">Connect with us</h2>
+           
+        </div>
+
+        <div class="contactForm">
+            <form action="https://formspree.io/f/mleygyqw" method="post">
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="name" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea name="message" required="required"></textarea>
+                    <span>Type your Message...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<div>
+    <footer class="flex justify-center text-xs">
+        &copy; | Designed By HOTHEAD01TH . All rights reserved.
+    </footer>
+</div>
+
+
+
+    <!--Script section-->
+    <script src="app.js"></script>
+    <script src=" https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
+    </script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js"></script>
+    <!--End of Script Section-->
+
+</body>
+
+</html>
